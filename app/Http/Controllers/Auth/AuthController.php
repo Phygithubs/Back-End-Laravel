@@ -18,6 +18,7 @@ class AuthController extends Controller
 
     public function createUser(Request $request)
     {
+        // make push
         $validate  =  Validator::make($request -> all(),
             [
                 'name' => 'required|max:20',
